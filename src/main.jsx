@@ -15,19 +15,19 @@ import Contact from './pages/contact/index.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/myPortfolio",
     element: <Home />,
   },
     {
-    path: "myPortfolio/projects",
+    path: "/myPortfolio/projects",
     element: <Projects />,
     },
     {
-    path: "/about",
+    path: "/myPortfolio/about",
     element: <About />,
   },
   {
-    path:"/contact",
+    path:"/myPortfolio/contact",
     element: <Contact />
   }
 ]);
