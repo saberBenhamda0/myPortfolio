@@ -24,7 +24,7 @@ function Home() {
 
     <div className= "w-screen h-screen bg-[#2f2f2f] flex flex-row-reverse align-middle">
 
-        <Link to='about' className='fixed z-50 w-16 top-2/4 right-6'>
+        <Link to='/myPortfolio/about' className='fixed z-50 w-16 top-2/4 right-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
         <div className='grid flex-1 place-content-center'>

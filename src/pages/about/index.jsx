@@ -19,10 +19,10 @@ const About = () => {
     <>
     <div className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
         <Menu />
-        <Link to='/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
+        <Link to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
-        <Link to='/' className='fixed z-50 w-16 rotate-180 cursor-pointer top-2/4 left-6'>
+        <Link to='/myPortfolio' className='fixed z-50 w-16 rotate-180 cursor-pointer top-2/4 left-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
         <div className= 'flex flex-col justify-between w-screen h-screen '>
