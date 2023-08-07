@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Menu from '../../components/Menu'
 import projectOneImg from '../../assets/images/project1.png'
 import Cards from '../../components/card'
+import SocialMediaLinks from '../../components/SocialMediaLinks';
 
 const Projects = () =>   {
 
@@ -14,6 +15,7 @@ const Projects = () =>   {
     <div className='w-screen bg-[#2f2f2f]'
 
     >
+        <SocialMediaLinks />
         <Menu />
         <Link to='/myPortfolio/contact' className='fixed z-50 w-16 top-2/4 right-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />

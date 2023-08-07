@@ -11,6 +11,7 @@ import backendIcon from '../../assets/images/backend.png'
 import webSecurityIcon from '../../assets/images/shield.png'
 import Lottie from 'lottie-react'
 import collegeanimation from '../../assets/animation/collegeanimation.json'
+import SocialMediaLinks from '../../components/SocialMediaLinks';
 
 const About = () => {
 
@@ -22,6 +23,7 @@ const About = () => {
         animate={{opacity:1, y:0}}
         transition={{duration:1}}
     className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
+        <SocialMediaLinks />
         <Menu />
         <Link to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
