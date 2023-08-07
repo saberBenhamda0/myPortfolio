@@ -8,18 +8,20 @@ import Menu from '../../components/Menu'
 import projectOneImg from '../../assets/images/project1.png'
 import Cards from '../../components/card'
 import SocialMediaLinks from '../../components/SocialMediaLinks';
+import { useEffect } from 'react';
 
 const Projects = () =>   {
-
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
+  useEffect((scrollToTop), [])
   return (
     <div className='w-screen bg-[#2f2f2f]'
 
     >
         <SocialMediaLinks />
         <Menu />
-        <Link to='/myPortfolio/contact' className='fixed z-50 w-16 top-2/4 right-6'>
-            <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
-        </Link>
+
         <Link to='/myPortfolio/about' className='fixed z-50 w-16 rotate-180 top-2/4 left-6'>
             <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>

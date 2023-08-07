@@ -12,17 +12,16 @@ import webSecurityIcon from '../../assets/images/shield.png'
 import Lottie from 'lottie-react'
 import collegeanimation from '../../assets/animation/collegeanimation.json'
 import SocialMediaLinks from '../../components/SocialMediaLinks';
+import { useEffect } from 'react'
 
 const About = () => {
 
-
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
+      useEffect((scrollToTop), [])
   return (
     <>
-    <motion.div 
-        initial={{opacity:0, y:"-30vh"}}
-        whileInView={{opacity:1, y:0}}
-        transition={{duration:0.8}}
-    className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
         <SocialMediaLinks />
         <Menu />
         <Link  to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
@@ -31,6 +30,12 @@ const About = () => {
         <Link to='/myPortfolio' className='fixed z-50 w-16 rotate-180 cursor-pointer top-2/4 left-6'>
             <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
+    <motion.div 
+        initial={{opacity:0, y:"-30vh"}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:0.8}}
+    className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
+
         <div className= 'flex flex-col justify-between w-screen h-screen '>
             <div className='grid h-2/4 place-content-center'>
                 <h1 className='text-3xl text-[#cacaca] font-extrabold text-center '>
@@ -68,7 +73,7 @@ const About = () => {
         className='grid grid-rows-3 mt-12 mb-12 place-content-end'>
         <motion.div  className='hover:bg-slate-600 transition-all ease-linear rounded-2xl  w-[517.2px] '>
             <div className='ml-6 text-xl font-semibold tracking-tight text-slate-200'>
-            my computer science degree
+            my Computer Science degree
             </div>
             <div>
                 <h1 className='ml-6 text-base font-semibold tracking-tight text-slate-400'>
@@ -78,14 +83,13 @@ const About = () => {
                 <h1 className='ml-6 text-base font-semibold tracking-tight text-slate-400'>
                     FST tanger
                 </h1>
-                <p className='text-base ml-4 font-light tracking-tight text-[#cacaca]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis eos adipisci sunt? Sapiente tempore, quasi maxime veritatis adipisci hic, libero cupiditate, a corrupti dolore fuga magnam sunt voluptas dolores!
-                </p>
+                <p className='text-base ml-4  h-16 font-light tracking-tight text-[#cacaca]'>
+                During my studies in the "Licence de Génie Informatique" (Computer Engineering Bachelor's degree), I gained a comprehensive understanding of various aspects of computer science and engineering. Enabling me to develop software applications and algorithms. I learned about computer architecture and networking</p>
             </div>
         </motion.div>
         <motion.div  className='hover:bg-slate-600 ease-linear transition-all rounded-2xl w-[517.2px]'>
             <div className='ml-6 text-xl font-semibold tracking-tight text-slate-200'>
-            my master degree
+            My Master degree
             </div>
             <div>
                 <h1 className='ml-6 text-base font-semibold tracking-tight text-slate-400'>
@@ -96,23 +100,23 @@ const About = () => {
                     FST tanger
                 </h1>
                 <p className='text-base ml-4 font-light tracking-tight text-[#cacaca]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis eos adipisci sunt? Sapiente tempore, quasi maxime veritatis adipisci hic, libero cupiditate, a corrupti dolore fuga magnam sunt voluptas dolores!
+                    (Future plans)
                 </p>
             </div>
         </motion.div>
         <motion.div   className='hover:bg-slate-600 transition-all ease-linear rounded-2xl w-[517.2px] '>
             <div className='ml-6 text-xl font-semibold tracking-tight text-slate-200'>
-            my first full time job
+            My First Full Time Job
             </div>
             <div>
                 <h1 className='ml-6 text-base font-semibold tracking-tight text-slate-400'>
                 2026 - one Day
                 </h1>
                 <h1 className='ml-6 text-base font-semibold tracking-tight text-slate-400'>
-                    where that shit
+                    ...
                 </h1>
                 <p className='text-base ml-4 font-light tracking-tight text-[#cacaca]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis eos adipisci sunt? Sapiente tempore, quasi maxime veritatis adipisci hic, libero cupiditate, a corrupti dolore fuga magnam sunt voluptas dolores!
+                (Future plans)
                 </p>
             </div>
         </motion.div>
