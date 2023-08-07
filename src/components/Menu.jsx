@@ -50,7 +50,7 @@ const Menu = () => {
     const [open, setOpen] = useState(false)
     const toggleMenu = () => {setOpen(prevOpen => !prevOpen)}
   return (
-    <div className='  bg-[#2f2f2f] fixed place-content-center grid z-10'>
+    <div className='  bg-[#cacaca] fixed place-content-center grid z-10'>
         <motion.div whileHover={{scale:1.1}}  onClick={toggleMenu} className='fixed z-50 w-16 h-16 mr-10 cursor-pointer top-6 right-6'>
             <img src={MenuIcon} alt='menuIcon' className='w-8 h-8 ' />
         </motion.div>

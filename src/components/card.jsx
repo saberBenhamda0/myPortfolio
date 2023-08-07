@@ -7,8 +7,7 @@ export default function Cards(props) {
 
     className='w-[384px] shadow-2xl border-solid rounded-2xl  h-[456.388px]'> 
     <img
-      alt="Meaningful alt text for an image that is not purely decorative"
-      src={props.img}
+          src={props.img}
       className='w-[384px] h-[200px] rounded-tl-2xl rounded-tr-2xl'
     />
     <div className='grid place-content-center'>

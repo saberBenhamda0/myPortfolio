@@ -20,16 +20,16 @@ const About = () => {
     <>
     <motion.div 
         initial={{opacity:0, y:"-30vh"}}
-        animate={{opacity:1, y:0}}
-        transition={{duration:1}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:0.8}}
     className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
         <SocialMediaLinks />
         <Menu />
-        <Link to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
-            <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
+        <Link  to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
+            <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
         <Link to='/myPortfolio' className='fixed z-50 w-16 rotate-180 cursor-pointer top-2/4 left-6'>
-            <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
+            <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
         <div className= 'flex flex-col justify-between w-screen h-screen '>
             <div className='grid h-2/4 place-content-center'>
@@ -122,9 +122,7 @@ const About = () => {
                 initial={{opacity:0, y:"30vh"}}
                 whileInView={{opacity:1,y:0,transition:{duration:1, delay:0.2}}}
     className='w-screen h-screen place-content-center grid bg-[#2f2f2f]'>
-        <h1>
-            my skills
-        </h1>
+
         <section 
 
         className='grid grid-cols-3 w-[1144px] rounded-2xl h-[617px] grid-rows-1 mt-12 mb-12 border-solid border-l-[1px] border-[#4d4e50] place-content-center'>

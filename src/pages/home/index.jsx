@@ -28,13 +28,13 @@ function Home() {
     <div className= "w-screen h-screen bg-[#2f2f2f] flex flex-row-reverse align-middle">
 
         <Link to='/myPortfolio/about' className='fixed z-50 w-16 top-2/4 right-6'>
-            <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
+            <motion.img whileHover={{scale:1.1}} src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
         </Link>
         <div className='grid flex-1 place-content-center'>
         <Lottie animationData={homeanimationData} className='w-[400px] h-[400px] ' loop={true}/>
         </div>
             <div className='relative grid flex-1 w-full h-screen place-content-center'>
-                <h1 className=' text-center mb-6 Roboto text-[#cacaca] font-bold text-2xl'>hello my name is saber ben hamda</h1>
+                <h1 className=' text-center mb-6 Roboto text-[#cacaca] font-bold text-2xl'>hello my name is <span>saber ben hamda</span></h1>
                 <h3 className='text-[#585858] text-center mb-2	 Roboto font-bold text-lg'>i'm a freelance fullstack web developer i manly use react and django</h3>
                 <h3  className=' cursor-pointer text-center text-[#585858]  Roboto font-bold text-lg'>feel free to check all the project in the next pages </h3>
                 </div>
