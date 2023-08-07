@@ -59,7 +59,10 @@ const Projects = () =>   {
         initial={{y:"30vh", opacity:0}}
         whileInView={{y:0, opacity:1, transition:{duration:0.8}}}
         whileHover={{scale:1.1}} className='mr-60' >
-        <Cards />
+        <Cards
+              title="an Ecommerce website (comming soon)"
+              discription='an Ecommerce website with payment gataway and accounts etc...'
+               />
 
          </motion.div>
          </div>
@@ -68,12 +71,19 @@ const Projects = () =>   {
 
          <motion.div initial={{y:"30vh", opacity:0}}  whileInView={{y:0, opacity:1, transition:{duration:0.8}}} whileHover={{scale:1.1}} className=' ml-60' >
 
-         <Cards />
+         <Cards
+         
+         title="my saas website (comming soon)"
+         discription='a software as a service website where you can access to all my react component for a monthly price'
+         />
          </motion.div>
 
 
         <motion.div initial={{y:"30vh", opacity:0}} whileInView={{y:0, opacity:1, transition:{duration:0.8}}}  whileHover={{scale:1.1}} className='mr-60' >
-        <Cards />
+        <Cards 
+        title="COMMING SOON "
+          discription=''
+        />
 
          </motion.div>
 

@@ -17,7 +17,11 @@ const About = () => {
 
   return (
     <>
-    <div className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
+    <motion.div 
+        initial={{opacity:0, y:"-30vh"}}
+        animate={{opacity:1, y:0}}
+        transition={{duration:1}}
+    className='flex flex-row justify-between w-screen h-screen bg-[#2f2f2f]'>
         <Menu />
         <Link to='/myPortfolio/projects' className='fixed z-50 w-16 cursor-pointer top-2/4 right-6'>
             <img src={rightIcon} alt='rightIcon' className='w-8 h-8 ' />
@@ -45,7 +49,7 @@ const About = () => {
              <div class=" z-0 absolute top-[120px] right-[200px]  w-[350px] h-[350px] rounded-full blur-3xl bg-gray-500 opacity-50"></div>
         </div>
 
-    </div>
+    </motion.div>
         
     <motion.div 
         initial={{opacity:0}}

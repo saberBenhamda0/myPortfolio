@@ -40,12 +40,10 @@ const Menu = () => {
 
 
     const navbarLinks = [
-
-        {title:"Projects",href:"projects"},
-        {title:"Home", href:""},
-        {title:"About", href:"about/"},
-        {title:"Contact", href:""},
-
+        {title:"Home", href:"/myPortfolio"},
+        {title:"About", href:"/myPortfolio/about/"},
+        {title:"Projects",href:"/myPortfolio/projects"},
+        {title:"Contact", href:"/myPortfolio/Contact"},
     ]
 
     
@@ -74,7 +72,7 @@ const Menu = () => {
                         <motion.div 
                         transition={{duration:1}}
                         initial={{y:"30vh", transition:{duration:0.5}}} animate={{y:0, transition:{duration:0.7}}} exit={{y:"-30vh"}} >
-                    <Link  to={`http://localhost:5173/${link.href}`}   className='m-2 text-4xl font-bold uppercase origin-top cursor-pointer text-slate-200 font-lato'>
+                    <Link  to={link.href}  className='m-2 text-4xl font-bold uppercase origin-top cursor-pointer text-slate-200 font-lato'>
                             {link.title}
                     </Link>
                     </motion.div>)}
